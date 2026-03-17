@@ -2,10 +2,86 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Мой первый сайт</title>
+    <title>Магазин автозапчастей</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+        }
+        .product {
+            background: #fff;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #ccc;
+        }
+        .product h2 {
+            margin-top: 0;
+        }
+        .buy-btn {
+            background: #28a745;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .buy-btn:hover {
+            background: #218838;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: #fff;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Привет, мир! 👋</h1>
-    <p>Это мой первый сайт на GitHub.</p>
+    <header>
+        <h1>Магазин автозапчастей</h1>
+        <nav>
+            <a href="#engine">Двигатель</a>
+            <a href="#brakes">Тормоза</a>
+            <a href="#tires">Шины</a>
+        </nav>
+    </header>
+    <main>
+        <section id="engine" class="product">
+            <h2>Фильтр воздушный</h2>
+            <p>Подходит для большинства моделей. Цена: 500₽</p>
+            <button class="buy-btn" onclick="alert('Добавлено в корзину!')">Купить</button>
+        </section>
+        <section id="brakes" class="product">
+            <h2>Тормозные колодки</h2>
+            <p>Передние колодки, комплект. Цена: 1200₽</p>
+            <button class="buy-btn" onclick="alert('Добавлено в корзину!')">Купить</button>
+        </section>
+        <section id="tires" class="product">
+            <h2>Летние шины</h2>
+            <p>Размер 205/55 R16. Цена: 4000₽</p>
+            <button class="buy-btn" onclick="alert('Добавлено в корзину!')">Купить</button>
+        </section>
+    </main>
+    <footer>
+        © 2026 Магазин автозапчастей
+    </footer>
 </body>
 </html>
